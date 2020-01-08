@@ -533,7 +533,7 @@ static void zclSampleSw_Init( void )
 
 #endif
 
-#ifndef Z_POWER_TEST
+#if 0 //ndef Z_POWER_TEST
   /* Initialize the LEDS */
   CUI_retVal_t retVal;
   CUI_ledRequest_t ledRequest;

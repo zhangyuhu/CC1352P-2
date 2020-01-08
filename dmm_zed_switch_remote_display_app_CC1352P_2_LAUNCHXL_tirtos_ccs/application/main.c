@@ -120,6 +120,8 @@
 #include <profiles/oad/cc26xx/mark_switch_factory_img.h>
 #endif
 
+#include "bsp_init.h"
+
 // BLE user defined configuration
 icall_userCfg_t user0Cfg = BLE_USER_CFG;
 
@@ -380,7 +382,9 @@ Void main()
     RegisterAssertCback(AssertHandler);
 
     Board_initGeneral();
+    bsp_init();
 
+    uart_writeString("ZYH-------",11);
 #ifdef DMM_OAD
     /* If DMM_OAD is enabled, look for a left button
      *  press on reset. This indicates to revert to some
@@ -510,6 +514,7 @@ Void main()
                     | IOC_CURRENT_4MA | IOC_SLEW_ENABLE);
 #endif /* DEBUG_SW_TRACE */
 
+    System_printf("ZYH---------------");
     BIOS_start(); /* enable interrupts and start SYS/BIOS */
 }
 /*******************************************************************************

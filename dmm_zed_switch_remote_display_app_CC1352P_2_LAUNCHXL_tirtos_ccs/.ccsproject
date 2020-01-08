@@ -15,4 +15,5 @@
 	<templateProperties value="id=dmm_zed_switch_remote_display_app_CC1352P_2_LAUNCHXL_tirtos_ccs.projectspec.dmm_zed_switch_remote_display_app_CC1352P_2_LAUNCHXL_tirtos_ccs,type=rtsc,xdcToolsVersion=3_60_02_34_core,target=ti.targets.arm.elf.M4F,platform=ti.platforms.simplelink:CC1352P1F3,buildProfile=release,isHybrid=true,configuroOptions= --compileOptions &quot;${COMPILER_FLAGS} &quot;"/>
 	<origin value="D:\APP\ti\simplelink_cc13x2_26x2_sdk_3_40_00_02\examples\rtos\CC1352P_2_LAUNCHXL\dmm\dmm_zed_switch_remote_display_app\tirtos\ccs\dmm_zed_switch_remote_display_app_CC1352P_2_LAUNCHXL_tirtos_ccs.projectspec"/>
 	<filesToOpen value=""/>
+	<isTargetManual value="false"/>
 </projectOptions>
